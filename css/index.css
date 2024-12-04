@@ -52,6 +52,23 @@
 	align-items: center;
 	justify-content: space-evenly;
 }
+.top_con_content .title{
+	font-size: 14px;
+	color: #999999;
+}
+.top_con_content .firstTitle{
+	font-weight: 400;
+	font-size: 24px;
+	color: #000;
+	margin-right: 8px;
+}
+.top_con_content .cancel{
+	color: #999999;
+	font-size: 14px;
+}
+.cancel_txt{
+	margin-left: 6px;
+}
 
 .rotate180{
 	transform: rotate(180deg);

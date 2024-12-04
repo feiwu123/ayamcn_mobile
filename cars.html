@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车</title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/user.css" />
+		<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4767711_p8twwtwfix.css"/>
+	</head>
+	<body>
+			<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+				<div class="row top_con top_con_content">
+					<div class="title">
+						<span class="firstTitle">Carrito</span><span class="small_title">Comprobar todos</span>
+					</div>
+					<div class="cancel">
+						<span class="iconfont icon-delete-bin-line"></span><span class="cancel_txt">Borrar</span>
+					</div>
+				</div>
+				<div class="mui-inner-wrap">
+					<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<div class="body-content">
+								<div class="row sheinOrder">
+								    <div class="mui-input-row">
+										<label>Número de pedido de sheyin</label>
+										<div class="input-con">
+											<input type="text" class="mui-input" >
+										</div>
+									</div>
+									<div class="mui-input-row">
+										<label>Obtener la dirección</label>
+										<div class="input-con">
+											<input type="text" class="mui-input" >
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="car_list">
+										<div class="car_item">
+											<div class="mui-input-row mui-checkbox mui-left">
+												<input name="checkbox" value="" type="checkbox">
+											</div>
+											<div class="products">
+												<div class="productImg">
+													<img src="https://img.ltwebstatic.com/images3_spmp/2024/12/03/a2/17331756032a8477a2bc2d28600fe36c3d1752c8c8_square.jpg"/>
+												</div>
+												<div class="detail">
+													<div class="name">
+														Redmi A3 4GB RAM 128...
+													</div>
+													<div class="props">
+														BLACK;128GB
+													</div>
+													<div class="caozuo">
+														<div class="price">
+															$1777.44MXN
+														</div>
+														<div>
+															<div class="mui-numbox" data-numbox-step='1' data-numbox-min='1' data-numbox-max='100'>
+															  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+															  <input class="mui-numbox-input" type="number" />
+															  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- off-canvas backdrop -->
+					<div class="mui-off-canvas-backdrop"></div>
+				</div>
+			
+				<div class="order_total">
+					<div class="order_detail">
+						<div class="total_value">Precio total:<span class="total_price">$999.00MXN</span></div>
+						<div class="tip">sin costo de envío</div>
+					</div>
+					<div class="submit_btn">
+						下单
+					</div>	
+				</div>
+				<!-- 底部tabs -->
+				<div class="bottom_tabs">
+					<div class="tabs">
+						<div class="iconfont icon-home-6-line"></div>
+						<div class="txt">home</div>
+					</div>
+					<div class="tabs">
+						<div class="iconfont icon-file-list-2-line"></div>
+						<div class="txt">Shein Envío</div>
+					</div>
+					<div class="tabs cur">
+						<div class="iconfont icon-shopping-cart-2-line"></div>
+						<div class="txt">Carrito</div>
+					</div>
+					<div class="tabs">
+						<div class="iconfont icon-user-4-line"></div>
+						<div class="txt">profile</div>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="popBox visible" id="select_language_list">
+				<div class="boxshadow">
+				</div>
+				<div class="popContent">
+					<div class="shopContent">
+						<div class="mui-scroll-wrapper popBoxContent">
+							<div class="mui-scroll">
+								<!-- 弹窗内容 -->
+								<div class="languageList">
+									<div class="listItem" data-url="images/languages/zh_tw.png" data-name="Español" >
+										<div class="listname">
+											<div class="language_img"><img src="images/languages/zh_tw.png"/></div>
+											<div class="language_name">Español</div>
+										</div>
+										<div>
+											<span class="iconfont icon-arrow-left-s-line rotate180"></span>
+										</div>
+									</div>
+									<div class="listItem" data-url="images/languages/zh_cn.png" data-name="中文">
+										<div class="listname">
+											<div class="language_img"><img src="images/languages/zh_cn.png"/></div>
+											<div class="language_name">中文</div>
+										</div>
+										<div>
+											<span class="iconfont icon-arrow-left-s-line rotate180"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+<!-- 					<div class="closeIcon">
+						<span class="iconfont icon-close-line"></span>
+					</div> -->
+				</div>
+			</div>
+	</body>
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/common/common.js"></script>
+<script type="text/javascript" charset="UTF-8">
+   mui.init({
+	   pullRefresh : {
+	       container:'#offCanvasContentScroll',//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+	       up : {
+	         height:50,//可选.默认50.触发上拉加载拖动距离
+	         auto:true,//可选,默认false.自动上拉加载一次
+	         contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+	         contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+	         callback:getAjax //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+	       }
+	     }
+   });
+   mui.plusReady(function(){
+    
+   });
+   mui.ready(function(){
+    
+    });
+   
+   function getAjax(){
+	   this.endPullupToRefresh(true);
+	   mui.ajax('http://server-name/login.php',{
+	   	data:{
+	   		username:'username',
+	   		password:'password'
+	   	},
+	   	dataType:'json',//服务器返回json格式数据
+	   	type:'post',//HTTP请求类型
+	   	timeout:10000,//超时时间设置为10秒；
+	   	headers:{'Content-Type':'application/json'},	              
+	   	success:function(data){
+	   		//服务器返回响应，根据响应结果，分析是否登录成功；
+			//this.endPullupToRefresh(true|false);必须要结束数据
+	   	},
+	   	error:function(xhr,type,errorThrown){
+	   		//异常处理；
+	   		console.log(type);
+	   	}
+	   });
+   }
+   
+   //绑定分类点击事件
+   mui('.firstCateCategory .mui-scroll').on('tap', '.mui-control-item', function(e){
+     console.log(this);
+	 //通过一级分类获取二级分类
+	 mui('#offCanvasContentScroll').pullRefresh({
+		 up : {
+		   height:50,//可选.默认50.触发上拉加载拖动距离
+		   auto:false,//可选,默认false.自动上拉加载一次
+		   contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+		   contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+		   callback:getAjax //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+		 }
+	 }).refresh(true);
+   });
+   
+   mui('.secondCategory .mui-scroll').on('tap', '.mui-control-item', function(e){
+	 mui('#offCanvasContentScroll').pullRefresh({
+		 up : {
+		   height:50,//可选.默认50.触发上拉加载拖动距离
+		   auto:false,//可选,默认false.自动上拉加载一次
+		   contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+		   contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+		   callback:getAjax //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+		 }
+	 }).refresh(true);
+	 //通过二级分类获取底部商品
+   });
+   
+   
+  </script>
+  
