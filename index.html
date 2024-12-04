@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4767711_kqiejcqo6dq.css"/>
+	</head>
+	<body>
+			<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+				<!--主界面部分-->
+				<div class="row top_con top_con_content">
+					<div class="logo_img">
+						<img src="images/TOPM.png" />
+					</div>
+					<div class="select_languages">
+						<img src="images/languages/zh_tw.png" />
+						<div>Español</div>
+						<span class="iconfont icon-arrow-left-s-line rotate180"></span>
+					</div>
+				</div>
+				<div class="mui-inner-wrap">
+					<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+					<div class="body-content">
+						<div class="row saldo">
+							<div class="saldoPage">
+								<img id="shareBgImg" src="images/bg.png" />
+								<div class="title">
+									Saldo
+								</div>
+								<div class="val">
+									<span class="dollar_icon">$</span><span class="saldo_val">2888.00</span><span class="currency">MXN</span>
+								</div>
+							</div>
+						</div>
+						<div class="row" style="margin-top: 12px;">
+							<div class="search-content">
+								<input class="search-input" type="text" required id="searchInput" placeholder=""/>
+								<label class="mui-placeholder" for="searchInput">
+									<span class="iconfont icon-search-2-line"></span>
+									<span class="iconText">Please enter the product you want to search for</span>
+								</label>
+							</div>
+						</div>
+						
+						<div class="categoryList firstCateCategory">
+							<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+								<div class="mui-scroll">
+									<a class="mui-control-item mui-active">
+										total
+									</a>
+									<a class="mui-control-item">
+										Celulares
+									</a>
+									<a class="mui-control-item">
+										Hogar
+									</a>
+									<a class="mui-control-item">
+										Smart devices
+									</a>
+									<a class="mui-control-item">
+										Audio
+									</a>
+									<a class="mui-control-item">
+										T
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="categoryList secondCategory">
+							<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+								<div class="mui-scroll">
+									<a class="mui-control-item mui-active">
+										Scooter
+									</a>
+									<a class="mui-control-item">
+										TV
+									</a>
+									<a class="mui-control-item">
+										Iluminación
+									</a>
+									<a class="mui-control-item">
+										Casa Inteligente
+									</a>
+									<a class="mui-control-item">
+										Casa Inteligente
+									</a>
+									<a class="mui-control-item">
+										Casa Inteligente
+									</a>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 下拉推荐产品 -->
+						<div class="row" id="productListContent">
+							<div class="productList">
+								<div class="productItem">
+									<div class="productImg">
+										<img src="https://img.ltwebstatic.com/images3_spmp/2024/12/03/a2/17331756032a8477a2bc2d28600fe36c3d1752c8c8_square.jpg"/>
+									</div>
+									<div class="productName">
+										Redmi Note 12 4GB RAM 128GB ROM Onyx Gray
+									</div>
+									<div class="productPrice">
+										$2899.00MXN
+									</div>
+								</div>
+								<div class="productItem">
+									<div class="productImg">
+										<img src="https://img.ltwebstatic.com/images3_spmp/2024/12/03/a2/17331756032a8477a2bc2d28600fe36c3d1752c8c8_square.jpg"/>
+									</div>
+									<div class="productName">
+										Redmi Note 12 4GB RAM 128GB ROM Onyx Gray
+									</div>
+									<div class="productPrice">
+										$2899.00MXN
+									</div>
+								</div>
+								<div class="productItem">
+									<div class="productImg">
+										<img src="https://img.ltwebstatic.com/images3_spmp/2024/12/03/a2/17331756032a8477a2bc2d28600fe36c3d1752c8c8_square.jpg"/>
+									</div>
+									<div class="productName">
+										Redmi Note 12 4GB RAM 128GB ROM Onyx Gray
+									</div>
+									<div class="productPrice">
+										$2899.00MXN
+									</div>
+								</div>
+								<div class="productItem">
+									<div class="productImg">
+										<img src="https://img.ltwebstatic.com/images3_spmp/2024/12/03/a2/17331756032a8477a2bc2d28600fe36c3d1752c8c8_square.jpg"/>
+									</div>
+									<div class="productName">
+										Redmi Note 12 4GB RAM 128GB ROM Onyx Gray
+									</div>
+									<div class="productPrice">
+										$2899.00MXN
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						</div>
+						</div>
+						
+					</div>
+					<!-- off-canvas backdrop -->
+					<div class="mui-off-canvas-backdrop"></div>
+				</div>
+			
+				<!-- 底部tabs -->
+				<div class="bottom_tabs">
+					<div class="tabs cur">
+						<div class="iconfont icon-home-6-line"></div>
+						<div class="txt">home</div>
+					</div>
+					<div class="tabs">
+						<div class="iconfont icon-file-list-2-line"></div>
+						<div class="txt">Shein Envío</div>
+					</div>
+					<div class="tabs">
+						<div class="iconfont icon-shopping-cart-2-line"></div>
+						<div class="txt">Carrito</div>
+					</div>
+					<div class="tabs">
+						<div class="iconfont icon-user-4-line"></div>
+						<div class="txt">profile</div>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="popBox visible" id="select_language_list">
+				<div class="boxshadow">
+				</div>
+				<div class="popContent">
+					<div class="shopContent">
+						<div class="mui-scroll-wrapper popBoxContent">
+							<div class="mui-scroll">
+								<!-- 弹窗内容 -->
+								<div class="languageList">
+									<div class="listItem" data-url="images/languages/zh_tw.png" data-name="Español" >
+										<div class="listname">
+											<div class="language_img"><img src="images/languages/zh_tw.png"/></div>
+											<div class="language_name">Español</div>
+										</div>
+										<div>
+											<span class="iconfont icon-arrow-left-s-line rotate180"></span>
+										</div>
+									</div>
+									<div class="listItem" data-url="images/languages/zh_cn.png" data-name="中文">
+										<div class="listname">
+											<div class="language_img"><img src="images/languages/zh_cn.png"/></div>
+											<div class="language_name">中文</div>
+										</div>
+										<div>
+											<span class="iconfont icon-arrow-left-s-line rotate180"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+<!-- 					<div class="closeIcon">
+						<span class="iconfont icon-close-line"></span>
+					</div> -->
+				</div>
+			</div>
+	</body>
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/common/common.js"></script>
+<script type="text/javascript" charset="UTF-8">
+   mui.init({
+	   pullRefresh : {
+	       container:'#offCanvasContentScroll',//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+	       up : {
+	         height:50,//可选.默认50.触发上拉加载拖动距离
+	         auto:true,//可选,默认false.自动上拉加载一次
+	         contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+	         contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+	         callback:getAjax //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+	       }
+	     }
+   });
+   mui.plusReady(function(){
+    
+   });
+   mui.ready(function(){
+    
+    });
+   
+   function getAjax(){
+	   this.endPullupToRefresh(true);
+	   mui.ajax('http://server-name/login.php',{
+	   	data:{
+	   		username:'username',
+	   		password:'password'
+	   	},
+	   	dataType:'json',//服务器返回json格式数据
+	   	type:'post',//HTTP请求类型
+	   	timeout:10000,//超时时间设置为10秒；
+	   	headers:{'Content-Type':'application/json'},	              
+	   	success:function(data){
+	   		//服务器返回响应，根据响应结果，分析是否登录成功；
+			//this.endPullupToRefresh(true|false);必须要结束数据
+	   	},
+	   	error:function(xhr,type,errorThrown){
+	   		//异常处理；
+	   		console.log(type);
+	   	}
+	   });
+   }
+   
+   //绑定分类点击事件
+   mui('.firstCateCategory .mui-scroll').on('tap', '.mui-control-item', function(e){
+     console.log(this);
+	 //通过一级分类获取二级分类
+	 mui('#offCanvasContentScroll').pullRefresh({
+		 up : {
+		   height:50,//可选.默认50.触发上拉加载拖动距离
+		   auto:false,//可选,默认false.自动上拉加载一次
+		   contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+		   contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+		   callback:getAjax //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+		 }
+	 }).refresh(true);
+   });
+   
+   mui('.secondCategory .mui-scroll').on('tap', '.mui-control-item', function(e){
+	 mui('#offCanvasContentScroll').pullRefresh({
+		 up : {
+		   height:50,//可选.默认50.触发上拉加载拖动距离
+		   auto:false,//可选,默认false.自动上拉加载一次
+		   contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+		   contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+		   callback:getAjax //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+		 }
+	 }).refresh(true);
+	 //通过二级分类获取底部商品
+   });
+   
+   
+  </script>
+  
