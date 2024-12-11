@@ -319,7 +319,7 @@ input[type='checkbox'] {
   font-family: FontAwesome; /* 引入相关字体库 */
   color: red; /* 设置已选中时的文本颜色 */
   position: absolute;
-  background-color: #EF6C2C;
+  background-color: #3B4656;
   color: #fff;
   top: 0px;
   left: 0px;

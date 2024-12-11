@@ -1,0 +1,181 @@
+.content{
+	background-image: url(../../images/loginBg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.topCon{
+	width: 100%;
+	height: 54px;
+	padding: 12px 10px;
+}
+.topCon .icon-arrow-left-s-line{
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	color: #fff;
+	display: block;
+	line-height: 30px;
+}
+.loginTxt{
+	margin-top: 14px;
+	text-align: center;
+}
+.loginTxt .headerTxt{
+	font-weight: 800;
+	font-size: 24px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.loginTxt .headerTip{
+	font-weight: 400;
+	font-size: 12px;
+	color: #C4C7CC;
+	width: 360px;
+	margin: 24px auto;
+	text-transform: uppercase;
+}
+.LoginCon{
+	background-color: #fff;
+	border-radius: 12px;
+	top: 184px;
+	position: absolute;
+	width: 94%;
+	left: 3%;
+	margin: 0 auto;
+	padding: 32px;
+}
+.LoginCon::after{
+	content: "";
+	height: 100px;
+	display: block;
+	position: absolute;
+	width: 100%;
+	left: 0;
+}
+.formCon{
+	margin-top: 32px;
+}
+.formCon .formInput{
+	position: relative;
+}
+.formInput label{
+	font-size: 14px;
+	font-family: Camphor Pro;
+	font-weight: 400;
+	color: #999999;
+}
+.formInput input{
+	margin-top: 12px;
+	background: #F7F7F7;
+	border-radius: 10px 10px 10px 10px;
+	border: 0px;
+	outline: 0px;
+	height: 52px;
+	padding: 0 22px;
+}
+.formInput .iconfont{
+	position: absolute;
+	right: 22px;
+	top: 50px;
+}
+.forgetPassword{
+	font-size: 14px;
+	font-family: Camphor Pro;
+	font-weight: 400;
+	color: #999999;
+	text-align: right;
+}
+.LoginCon .btn{
+	height: 52px;
+	width: 100%;
+	border-radius: 5px 5px 5px 5px;
+	text-align: center;
+	line-height: 52px;
+}
+#login,#comfirm{
+	margin-top: 39px;
+	color: #fff;
+	background: #3B4656;
+	text-transform: uppercase;
+}
+.loginBtnsgroup{
+	display: flex;
+	align-items: center;
+}
+.loginBtnsgroup .loginBtn{
+	width: 50%;
+	height: 56px;
+	background-image: url(../../images/login/login_no.png);
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	background-position: right;
+	background-size: contain;
+}
+.loginBtnsgroup .loginBtn.cur{
+	background-image: url(../../images/login/login.png);
+	color: #fff;
+}
+.loginBtnsgroup .createBtn{
+	width: 50%;
+	height: 56px;
+	background-image: url(../../images/login/create_no.png);
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	background-position:left;
+	background-size: contain;
+}
+.createBtn div{
+	width: 92px;
+}
+.loginBtnsgroup .createBtn.cur{
+	background-image: url(../../images/login/create.png);
+	color: #fff;
+}
+#createUser{
+	margin-top: 24px;
+	color: #333;
+	background-color: #EFEFEF;
+}
+.checkbox{
+	margin-top: 57px;
+}
+.checkbox .rulesTxt{
+	color: #F42F54;
+}
+
+#sendSms,#sendemailCode{
+	font-size: 14px;
+	font-family: Camphor Pro;
+	font-weight: 400;
+	color: #EF6C2C;
+}
+.toggleLoginType{
+	display: flex;
+	gap: 12px;
+	margin-top: 36px;
+}
+.toggleLoginType .tabItem{
+	font-size: 16px;
+	font-family: Camphor Pro;
+	font-weight: 400;
+	color: #CCCCCC;
+}
+.toggleLoginType .tabspe{
+	color: #CCCCCC;
+}
+.toggleLoginType .tabItem.active{
+	color: #000000;
+	font-family: Camphor Pro Bold;
+}
+.hide{
+	display: none;
+}
