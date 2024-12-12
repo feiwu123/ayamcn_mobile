@@ -5,32 +5,94 @@
 }
 .productMain{
 	background-color: #fff;
-	padding: 20px 0;
+	position: relative;
+	padding-top: 37px;
 }
+.productMain .imgNum{
+	position: absolute;
+	background: rgba(0,0,0,0.4);
+	border-radius: 4px 4px 4px 4px;
+	color: #fff;
+	top: 10px;
+	right: 16px;
+	z-index: 9;
+	padding: 2px;
+}
+.mui-content{
+	background-color: #F6F6F6;
+}
+.likeDiv{
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+.likeDiv .iconfont{
+	color: #DBDBDB;
+	font-size: 24px;
+}
+
 #slider{
-	width: 70%;
+	width: 82%;
 	margin: 0 auto;
 }
-.topmenuICon{
-	width: 34px;
-	height: 34px;
-	background: #B7B7B7;
-	border-radius: 17px;
-	opacity: 1;
-	line-height: 34px;
-	text-align: center;
-	color: #fff;
-	position: absolute;
-	top:20px;
+.productMain .mui-slider-item img{
+	width: 100%;
+	display: block;
+	object-fit: contain;
+	aspect-ratio: 1 / 1;
 }
-.topmenuICon.menuIcon{
-	left: 3%;
+.topCon{
+	background-color: #fff;
+} 
+.topCon .topConDiv{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 16px;
+	height: 54px;
+	align-items: center;
 }
-.topmenuICon.shopIcon{
-	right: 3%;
+.topCon .topConDiv .iconfont{
+	font-size: 24px;
+}
+.topCon .topConDiv .page_title{
+	font-size: 16px;
+}
+.topCon .topConDiv .left_con{
+	display: flex;
+	gap: 24px;
+	min-width: 30%;
+	justify-content: start;
+}
+.topCon .topConDiv .right_con{
+	display: flex;
+	gap: 24px;
+	min-width: 30%;
+	justify-content: end;
 }
 
 .productInfo{
+	padding-top: 16px;
+	background-color: #fff;
+	padding-bottom: 12px;
+}
+.productInfo .line{
+	border-top: 1px solid #F6F6F6;
+}
+.productInfo .shareTitle{
+	color: #999999;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.shareBtn{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 54px;
+	padding: 0 16px;
+	border: 1px solid #F6F6F6;
+	border-radius: 8px;
+}
+.shareBtn:not(.shein_share){
 	margin-top: 16px;
 }
 .productInfo .priceCon{
@@ -40,7 +102,7 @@
 }
 .productInfo .priceCon .price{
 	font-size: 28px;
-	color: #FF0000;
+	color: #F42F54;
 	font-family: Camphor Pro Bold;
 	font-weight: 500;
 }
@@ -55,6 +117,7 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: 12px;
+	margin-bottom: 12px;
 }
 .productInfo .productTitle .title{
 	font-size: 16px;
@@ -62,42 +125,6 @@
 	font-weight: 500;
 	color: #000000;
 	line-height: 22px;
-}
-.productInfo .productTitle .shareBtn{
-	display: flex;
-	background-image: url(../../images/shareBtn.png);
-	width: 83px;
-	height: 32px;
-	justify-content: space-around;
-	line-height: 32px;
-	background-repeat: no-repeat;
-}
-.productInfo .productTitle .shareBtn .shareTxt{
-	font-size: 10px;
-	font-family: Camphor Pro Bold;
-	text-transform: uppercase;
-	color: #fff;
-	transform: scale(0.9);
-}
-.productInfo .productTitle .shareBtn .sharePrice .currencyIcon{
-	font-size: 8px;
-	font-family: Camphor Pro;
-	font-weight: 400;
-	color: #CB202B;
-	transform: scale(0.8);
-}
-.productInfo .productTitle .shareBtn .sharePrice .commission{
-	font-size: 14px;
-	font-family: Camphor Pro Bold;
-	font-weight: 400;
-	color: #CB202B;
-}
-.productInfo .productTitle .shareBtn .sharePrice .currency{
-	font-size: 5px;
-	font-family: Camphor Pro;
-	font-weight: 400;
-	color: #CB202B;
-	transform: scale(0.5);
 }
 
 .productMessage{
@@ -133,7 +160,9 @@
 }
 
 .productDetail{
-	margin: 28px 0;
+	margin: 9px 0;
+	background-color: #fff;
+	padding: 24px 0;
 }
 .productDetail .firstTitle{
 	display: flex;
@@ -145,6 +174,59 @@
 	height: 1px;
 	width: 66px;
 	background-color: #000000;
+}
+.storeInfor{
+	padding: 16px;
+	background-color: #fff;
+	margin-top: 9px;
+}
+.storeInforTop{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.storeDetail{
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.storeDetail .storeImg{
+	border-radius: 50%;
+	overflow: hidden;
+	width: 66px;
+	height: 66px
+}
+.storeDetail .storeName{
+	font-size: 16px;
+	font-weight: bold;
+}
+.gotoShop{
+	width: 105px;
+	height: 30px;
+	background: #3B4656;
+	border-radius: 4px 4px 4px 4px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+}
+.storeInfoBottom .nums{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 18px;
+}
+.storeInfoBottom .nums .shopdata {
+    font-size: 13px;
+    color: #999999;
+	text-transform: uppercase;
+}
+.storeInfoBottom .nums .num {
+    font-weight: bold;
+    font-size: 13px;
+    color: #333333;
+}
+.storeInfoBottom .nums .fgx{
+	color:#F6F6F6;
 }
 
 .bottomCon{
@@ -179,7 +261,7 @@
 }
 .buyBtn{
 	height: 43px;
-	background: linear-gradient(270deg, #EC4927 0%, #E76F31 100%);
+	background: #3B4656;
 	border-radius: 10px 10px 10px 10px;
 	opacity: 1;
 	text-align: center;
@@ -187,7 +269,7 @@
 	color: #fff;
 }
 .clickBtn.buyNow{
-	background: linear-gradient(270deg, #EC4927 0%, #E76F31 100%);
+	background: #3B4656;
 }
 
 .hide{
@@ -247,7 +329,7 @@
 	margin-top: 10px;
 }
 .popBox .popContent{
-	height: 72vh;
+	height: 90vh;
 	background: #fff;
 	width: 100%;
 	position: absolute;
@@ -257,7 +339,7 @@
 	transition: all .3s;
 }
 .popBox.visible .popContent{
-	transform: translateY(72vh);
+	transform: translateY(90vh);
 }
 .popBox.visible .boxshadow{
 	display: none;
@@ -290,7 +372,7 @@
 	-webkit-background-clip: text;
 }
 .popBox .mui-scroll-wrapper{
-	height: 60vh;
+	height: 79vh;
 }
 .popBox .mui-scroll-wrapper .proAttr{
 	padding: 16px;
@@ -330,6 +412,8 @@
 }
 .imgAttr ul li img{
 	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: contain;
 }
 .imgAttr ul li .attrName{
 	font-size: 13px;
