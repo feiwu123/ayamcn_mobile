@@ -9,12 +9,14 @@
 .topCon{
 	width: 100%;
 	height: 54px;
-	padding: 12px 10px;
+	padding: 16px 10px;
+	display: flex;
+	justify-content: space-between;
 }
-.topCon .icon-arrow-left-s-line{
+.topCon .icon-arrow-left-s-line,.topCon .icon-home-6-line{
 	width: 30px;
 	height: 30px;
-	font-size: 30px;
+	font-size: 24px;
 	color: #fff;
 	display: block;
 	line-height: 30px;
