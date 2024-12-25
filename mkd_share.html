@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Shein Envío</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/mkd.css" />
+		<link rel="stylesheet" href="css/preview-image.css" />
+		<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4767711_uotf49qsn6.css"/>
+	</head>
+	<body>
+			<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+				<!--主界面部分-->
+				<div class="topCon">
+					<div class="topConDiv">
+						<div class="left_con">
+							<span class="iconfont icon-arrow-left-s-line backUrl"></span>
+						</div>
+						<div class="center_con">
+						</div>
+						<div class="right_con">
+							<span class="iconfont icon-home-6-line"></span>
+						</div>
+					</div>
+				</div>
+				<div class="mui-inner-wrap">
+					<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<div class="shein_order_number">
+								<div class="shein_order_top">
+									<div class="shein_boxes_img"><img src="images/shein_boxes.png" width="128" height="113"/></div>
+									<div class="shein_platform">
+										<img src="images/mkd.png" width="95" height="24"/>
+										<span>La plataforma</span>
+										<div class="cube_icon"></div>
+									</div>
+								</div>
+								<div class="shein_ai_imgs">
+									<div class="title_con">
+										<div class="title">Al imágenes</div>
+										<label class="view_origin_img" for="origin_img">Ver imagen</label>
+									</div>
+									<div class="origin_img_con">
+										Imagen original:Dirección de la imagen.jpg
+										<img style="display: none;" src="https://img.ltwebstatic.com/images3_spmp/2024/12/03/a2/17331756032a8477a2bc2d28600fe36c3d1752c8c8_square.jpg" id="origin_img" data-preview-src="" data-preview-group="1" />
+									</div>
+									<div class="generate_imgs">
+										Haz clic para generar
+									</div>
+									<div class="tips">
+										Generación de imagen en curso, se completará en 300s
+									</div>
+									<div class="show_imgs">
+										<div class="ai_generated_image">
+											<img src="https://chobs.mistoremx.com/images/202312/thumb_img/0_thumb_G_1702600250520.jpg" data-preview-group="2" data-preview-src=""/>
+										</div>
+										<div class="ai_generated_image">
+											<img src="https://chobs.mistoremx.com/images/202411/thumb_img/0_thumb_G_1732339854924.jpg" data-preview-group="2" data-preview-src=""/>
+										</div>
+										<div class="ai_generated_image">
+											<img src="https://chobs.mistoremx.com/images/202411/thumb_img/0_thumb_G_1732340122639.jpg" data-preview-group="2" data-preview-src=""/>
+										</div>
+										<div class="ai_generated_image">
+											<img src="https://chobs.mistoremx.com/images/202405/thumb_img/0_thumb_G_1716440392261.jpg" data-preview-group="2" data-preview-src=""/>
+										</div>
+										<div class="ai_generated_image">
+											<img src="https://chobs.mistoremx.com/images/202409/thumb_img/0_thumb_G_1727480192615.jpg" data-preview-group="2" data-preview-src=""/>
+										</div>
+										<div class="ai_generated_image">
+											<img src="https://chobs.mistoremx.com/images/202410/thumb_img/1575_thumb_G_1727926006709.jpg" data-preview-group="2" data-preview-src=""/>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row progress_steps">
+									<div class="progress_step stepState cur success_step">
+										<div class="step_icon">
+											<img src="./images/mkd/selected.png" />
+										</div>
+										<div class="step_txt">
+											Precio
+										</div>
+									</div>
+									<div class="progress_step ">
+										<div class="step_icon">
+											<div class="line_icon"></div>
+										</div>
+										<div class="step_txt">
+										</div>
+									</div>
+									<div class="progress_step stepState">
+										<div class="step_icon">
+											<img src="./images/mkd/step2.png" />
+										</div>
+										<div class="step_txt">
+											Flete
+										</div>
+									</div>
+									<div class="progress_step">
+										<div class="step_icon">
+											<div class="line_icon"></div>
+										</div>
+										<div class="step_txt">
+										</div>
+									</div>
+									<div class="progress_step stepState">
+										<div class="step_icon">
+											<img src="./images/mkd/step3.png" />
+										</div>
+										<div class="step_txt">
+											completar
+										</div>
+									</div>
+								</div>
+								
+								<div class="step_content step_content_row_1">
+									<div class="row order_number_content">
+										<label>Vincular precios</label>
+										<div class="order_input">
+											<input class="shein_order_number" value=""  disabled/>
+										</div>
+									</div>
+								
+									<div class="setPrice">
+										<div class="setPriceCon">
+											<div class="logo_name">
+												<img src="images/mkd/ML.png" width="25" height="16"/>
+												<span>Mecrado Libre</span>
+											</div>
+											<div class="props_prices">
+												<div class="current_price_con">
+													<label>Precio por publicación</label>
+													<div class="current_price">
+														<input class="price" disabled/>
+													</div>
+												</div>
+												<div class="current_price_con">
+													<label>Envío por Mercado Envíos</label>
+													<div class="current_price">
+														<input class="price" value="Para generar" disabled/>
+													</div>
+												</div>
+												<div class="current_price_con">
+													<label>Impuestos</label>
+													<div class="current_price">
+														<input class="price" value="$0.00MXN" disabled/>
+													</div>
+												</div>
+												<div class="current_price_con">
+													<label>Reclibirás por cada venta</label>
+													<div class="current_price">
+														<input class="price" value="$0.00MXN" disabled/>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="setPrice" style="margin-bottom: 20px;">	
+										<div class="setPriceCon">
+											<div class="logo_name">
+												<img src="images/mkd/MS.png" width="25" height="16"/>
+												<span>Mecrado Shops</span>
+											</div>
+											<div class="props_prices">
+												<div class="current_price_con">
+													<label>Precio por publicación</label>
+													<div class="current_price">
+														<input class="price" disabled/>
+													</div>
+												</div>
+												<div class="current_price_con">
+													<label>Envío por Mercado Envíos</label>
+													<div class="current_price">
+														<input class="price" value="Para generar" disabled/>
+													</div>
+												</div>
+												<div class="current_price_con">
+													<label>Impuestos</label>
+													<div class="current_price">
+														<input class="price" value="$0.00MXN" disabled/>
+													</div>
+												</div>
+												<div class="current_price_con">
+													<label>Reclibirás por cada venta</label>
+													<div class="current_price">
+														<input class="price" value="$0.00MXN" disabled/>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="step_content step_content_row_2" style="margin-bottom: 20px;">
+									<div class="setPrice">
+										<div class="setPriceCon">
+											<div class="logo_name">
+												<img src="images/mkd/ML.png" width="25" height="16"/>
+												<span>Mecrado Libre</span>
+											</div>
+											<div class="mkd_express_details">
+												<div class="mkd_express_title">
+													<img src="images/mkd/gou.png" width="18" height="18" />
+													<span class="title">Mercado Envíos</span>
+													<span class="view">¿Cómo funciona?</span>
+												</div>
+												<div class="mkd_express_con">
+													<div class="mkd_express_con_title">
+														<div class="title">Con envío gratis para el comprador <span class="green">¡Cubrimos el 40% por tu reputación!</span></div>
+													</div>
+													<div class="mkd_express_con_det">
+														Pagas $186 por envío a cualquier destino.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+										<div class="setPrice">
+											<div class="setPriceCon">
+												<div class="logo_name">
+													<img src="images/mkd/MS.png" width="25" height="16"/>
+													<span>Mecrado Shops</span>
+												</div>
+												<div class="mkd_express_details">
+													<div class="mkd_express_title">
+														<img src="images/mkd/gou.png" width="18" height="18" />
+														<span class="title">Mercado Envíos</span>
+														<span class="view">¿Cómo funciona?</span>
+													</div>
+													<div class="mkd_express_con">
+														<div class="mui-input-row mui-radio mui-left">
+															<input name="radio1" type="radio" checked>
+														</div>
+														<div style="width: calc(100% - 30px);">
+															<div class="mkd_express_con_title">
+																<div class="title">Con envío gratis para el comprador</div>
+															</div>
+															<div class="mkd_express_con_det">
+																Pagas $168 por envío.Si te compran más de un producto,calcularemos el costo de envío según lo que haya en el paquete.
+															</div>
+														</div>
+													</div>
+													<div class="mkd_express_con">
+														<div class="mui-input-row mui-radio mui-left">
+															<input name="radio1" type="radio">
+														</div>
+														<div style="width: calc(100% - 30px);">
+															<div class="mkd_express_con_title">
+																<div class="title">No ofrecer envío gratis</div>
+															</div>
+															<div class="mkd_express_con_det">
+																El comprador deberá hacerse cargo del costo del envío.
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>	
+								
+							</div>		
+						</div>
+					</div>
+				</div>
+				<div class="bottom_content">
+					<div class="next_step">
+						下一步
+					</div>
+					<div class="confirm_btn hide">
+						Confirmar
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/mui.zoom.js"></script>
+<script src="js/mui.previewimage.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/common/common.js"></script>
+<script type="text/javascript" charset="UTF-8">
+   mui.init({
+		
+   });
+   mui.previewImage();
+  mui('.mui-scroll-wrapper').scroll(); 
+$(".view_origin_img").on("tap",function(){
+	var origin_btn = document.getElementById("origin_img");
+	mui.trigger(origin_btn,'tap');
+})
+
+$(".next_step").on("tap",function(){
+	$(this).addClass('hide');
+	$(".confirm_btn").removeClass('hide');
+	$(".stepState").eq(0).find(".step_icon img").attr('src','./images/mkd/complete.png');
+	$(".stepState").eq(1).find(".step_icon img").attr('src','./images/mkd/selected.png');
+	
+})
+</script>
+  
