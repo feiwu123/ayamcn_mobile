@@ -195,7 +195,7 @@
 									</div>
 								</div>
 								
-								<div class="step_content step_content_row_2" style="margin-bottom: 20px;">
+								<div class="step_content step_content_row_2 hide" style="margin-bottom: 20px;">
 									<div class="setPrice">
 										<div class="setPriceCon">
 											<div class="logo_name">
@@ -295,7 +295,9 @@ $(".view_origin_img").on("tap",function(){
 
 $(".next_step").on("tap",function(){
 	$(this).addClass('hide');
+	$(".step_content_row_1").addClass('hide');
 	$(".confirm_btn").removeClass('hide');
+	$(".step_content_row_2").removeClass('hide');
 	$(".stepState").eq(0).find(".step_icon img").attr('src','./images/mkd/complete.png');
 	$(".stepState").eq(1).find(".step_icon img").attr('src','./images/mkd/selected.png');
 	
