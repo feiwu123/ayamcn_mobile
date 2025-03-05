@@ -7,6 +7,8 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link rel="stylesheet" href="css/mui.min.css">
+		<link href="css/mui.picker.css" rel="stylesheet" />
+		<link href="css/mui.poppicker.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4767711_kqiejcqo6dq.css"/>
 	</head>
@@ -47,6 +49,15 @@
 								</label>
 							</div>
 						</div>
+						
+						<div class="row" style="display: flex;justify-content: space-between;align-items: center;margin-top: 24px;margin-bottom: 24px;">
+							<div class="title" style="font-weight: bold;font-size: 18px;color: #000000;">Lista de productos</div>
+							<div class="shops_type" style="font-size: 14px;color: #333333;display: flex;align-items: center;">
+								<div class="shop_name">TIKTOK SHOP</div>
+								<div class="iconfont icon-arrow-left-s-line" style="display: block;transform: rotate(-90deg);"></div>
+							</div>
+						</div>
+						
 						
 						<div class="categoryList firstCateCategory">
 							<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
@@ -217,6 +228,8 @@
 <script src="js/mui.min.js"></script>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/common/common.js"></script>
+<script src="js/mui.picker.js"></script>
+<script src="js/mui.poppicker.js"></script>
 <script type="text/javascript" charset="UTF-8">
    mui.init({
 	   pullRefresh : {
@@ -287,6 +300,20 @@
 	 //通过二级分类获取底部商品
    });
    
+   var pickerShop = new mui.PopPicker();
+   pickerShop.setData([{
+       value: "tiktok",
+       text: "TIKTOK SHOP"
+   }, {
+       value: "temu",
+       text: "TEMu"
+   }])
+   
+   $(".shops_type").on("tap",function(e){
+	 pickerShop.show(function(SelectedItem) {
+	 	 $(".shop_name").html(SelectedItem[0].text);
+	 })  
+   })
    
   </script>
   

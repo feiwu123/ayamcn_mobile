@@ -1,21 +1,9 @@
-.mui-bar{
-	background: url(../../images/head/orderHeader.png);
+.topConDiv .iconfont {
+    font-size: 24px;
+    color: #fff;
 }
 .mui-bar-nav~.mui-content{
 	padding-bottom: 76px;
-}
-.orderState{
-	background: url(../../images/head/orderState.png);
-	height: 146px;
-	background-size: cover;
-	background-position: center;
-	position: absolute;
-	top: -58px;
-	width: 100%;
-	z-index: -1;
-}
-.orderStateMsg{
-	height: 88px;
 }
 .orderStateMsg .title{
 	font-size: 20px;
@@ -73,6 +61,9 @@
 	height: 37px;
 	line-height: 37px;
 	padding: 0 16px;
+	min-width: 90px;
+	box-sizing: border-box;
+	text-align: center;
 }
 
 .orderDetail{

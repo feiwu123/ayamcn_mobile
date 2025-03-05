@@ -129,6 +129,8 @@ input[type='checkbox'] {
 }
 .shopCarItem .proImg img{
 	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
 }
 .shopCarItem .proInfo{
 	flex: 1;
@@ -144,6 +146,7 @@ input[type='checkbox'] {
 	display: inline-block;
 	white-space: nowrap;
 	width: 100%;
+	font-weight: bold;
 }
 .props .propItem{
 	display: inline-block;
@@ -160,10 +163,14 @@ input[type='checkbox'] {
 	justify-content: space-between;
 }
 .proInfo .priceNum .marketPrice{
-	font-size: 16px;
+	font-size: 14px;
 	font-family: PingFang HK, PingFang HK;
-	font-weight: 400;
+	font-weight: 600;
 	color: #333;
+}
+.proInfo .priceNum .productNumber{
+	font-size: 14px;
+	color: #666666;
 }
 /* 数字选择器 */
 .mui-numbox{
@@ -212,7 +219,9 @@ input[type='checkbox'] {
 }
 .selectShop .shopAddress{
 	padding: 8px 16px;
-	background-color: #F7F7F7;
+	background-color: #fff;
+	font-size: 14px;
+	color: #999999;
 	margin-top: 8px;
 }
 .orderList{
@@ -239,7 +248,7 @@ input[type='checkbox'] {
 	font-size: 18px;
 	font-family: Camphor Pro Bold;
 	font-weight: 500;
-	color: #000000;
+	color: #F42F54;
 }
 .orderAmount .amountTotal{
 	background-color: #fff;

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/ayamcn/orderSubmit.css" />
+		<link rel="stylesheet" href="css/ayamcn/orderDetail.css" />
+		
+		<link rel="stylesheet" href="fonts/font/iconfont.css"/>
+	</head>
+	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+			<div class="topCon" style="position: relative;">
+				<div class="topConDiv" style="background-color: #3B4656;">
+					<div class="left_con">
+						<span class="iconfont icon-arrow-left-s-line backUrl"></span>
+					</div>
+					<div class="center_con">
+						Detalles del pedido
+					</div>
+					<div class="right_con" style="width: 24px;">
+					</div>
+				</div>
+			</div>
+			<!--主界面部分-->
+			<div class="mui-inner-wrap">
+				<div class="mui_head_bg">
+				</div>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper" style="background-color: #F9F9F9;">
+					<div class="mui-scroll">
+					<!-- 选择门店 -->
+					<div class="orderState row">
+					</div>
+					<div class="shippingState">
+						<div style="background-color: #3B4656;padding: 16px;">
+							<div class="orderStateMsg">
+								<div class="title">Fecha</div>
+								<div class="msg">2024-10-21 10:22:22</div>
+							</div>						
+							<div class="selectShop" style="margin-top: 16px;">
+								<div class="selectTitle">
+									<div class="title">
+										<span class="iconfont icon-truck-line"></span>
+										<span style="display:inline-block;margin-left:5px">物流状态</span>
+									</div>
+									<div class="iconfont icon-arrow-left-s-line" style="transform: rotate(180deg);"></div>
+								</div>
+								<div class="shopAddress useraddress">
+									商家暂未发货
+								</div>
+							</div>
+						</div>
+						
+					<!-- 内容 -->
+					<div class="orderAmount">
+						<div class="shopCarList orderList">
+							<div class="orderItem">
+								<div class="shopCarItem">
+									<div class="proImg">
+										<img src="https://img.ltwebstatic.com/images3_spmp/2025/02/27/4a/1740595122031c4f1b546d07c482649777b730fe8c_square.jpg" />
+									</div>
+									<div class="proInfo">
+										<div class="proTitle">
+											Redmi Note 12 4GB RAM 128GB ROM Onyx Gray
+										</div>
+										<div class="props">
+											<div class="propItem">
+												<span>128GB;Black</span>
+								<!-- 				<span class="iconfont icon-arrow-drop-down-fill trans45"></span> -->
+											</div>
+										</div>
+										<div class="priceNum">
+											<div class="marketPrice">$4999.00MXN</div>
+											<div class="productNumber">
+												×<span class="pnum">1</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<hr>
+							<div class="orderItem">
+								<div class="shopCarItem">
+									<div class="proImg">
+										<img src="https://img.ltwebstatic.com/images3_spmp/2025/02/27/4a/1740595122031c4f1b546d07c482649777b730fe8c_square.jpg" />
+									</div>
+									<div class="proInfo">
+										<div class="proTitle">
+											Redmi Note 12 4GB RAM 128GB ROM Onyx Gray
+										</div>
+										<div class="props">
+											<div class="propItem">
+												<span>128GB;Black</span>
+								<!-- 				<span class="iconfont icon-arrow-drop-down-fill trans45"></span> -->
+											</div>
+										</div>
+										<div class="priceNum">
+											<div class="marketPrice">$4999.00MXN</div>
+											<div class="productNumber">
+												×<span class="pnum">1</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<hr>
+						</div>
+						<div class="amountTotal">
+							<div class="proNum amountItem">
+								<span calss="title">商品数量</span>
+								<span class="val">4</span>
+							</div>
+							<div class="total amountItem">
+								<span calss="title"></span>
+								<span class="val">$1999.00MXN</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="orderDetail">
+						<div class="orderDetailItem">
+							<div>订单编号</div>
+							<div><span class="num">2023050503580488373</span><span class="iconfont icon-file-copy-line copeOrderNumber"></span></div>
+						</div>
+						<div class="orderDetailItem">
+							<div>希音订单号</div>
+							<div>2023050503580488373</div>
+						</div>
+						<div class="orderDetailItem">
+							<div>下单时间</div>
+							<div>2020-10-21 11:22:33</div>
+						</div>
+					</div>
+						
+					</div>
+				</div>
+				</div>
+				<div class="bottomCom">
+					<div class="bottomBtn">
+						Ver
+					</div>
+					<div class="bottomBtn">
+						Logistics
+					</div>
+				</div>
+				<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+	
+	
+	</body>
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/common/common.js"></script>
+<script>
+	mui.init({
+		
+	});
+	mui('.mui-scroll-wrapper').scroll(); 
+	mui.plusReady(function(){
+	 
+	});
+	mui.ready(function(){
+	 
+	 });
+	 
+	$(".copeOrderNumber").on("tap",function(){
+		 var text = $(this).siblings(".num").html();
+		 copyTextToClipboard(text);
+	})
+</script>
