@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		
+		<link rel="stylesheet" href="fonts/font/iconfont.css"/>
+		<link rel="stylesheet" href="css/ayamcn/editUser.css"/>
+		<link rel="stylesheet" href="js/photoClip-master/dist/amazeui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+	</head>
+	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+			<div class="topCon" style="position: relative;">
+				<div class="topConDiv" style="background-color: #3B4656;">
+					<div class="left_con">
+						<span class="iconfont icon-arrow-left-s-line backUrl"></span>
+					</div>
+					<div class="center_con" style="display: flex;justify-content: center;gap: 16px;align-items: center;">
+						<div class="pageTabItem cur" data-index="1">información</div>
+						<div class="spr_icon">|</div>
+						<div class="pageTabItem" data-index="2">contraseña</div>
+					</div>
+					<div class="right_con" style="width: 24px;">
+					</div>
+				</div>
+			</div>
+			<!--主界面部分-->
+			<div class="mui-inner-wrap">
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+					<!-- 内容 -->
+						<div class="editUserInfor" >
+							<div class="editTitle">
+								<div class="iconImg">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19" fill="none">
+									<path id="â" d="M15.25 18.625C14.6458 16.9167 14.3438 15.1042 14.3438 13.1875C14.3438 8.83333 15.6042 4.91667 18.125 1.4375L23.375 0.53125C21.6458 3.48958 20.7292 6.60417 20.625 9.875L23 10.25L23.7188 17.5625L15.25 18.625ZM1.6875 18.625C1.08333 16.9167 0.78125 15.1042 0.78125 13.1875C0.78125 8.83333 2.04167 4.91667 4.5625 1.4375L9.8125 0.53125C8.08333 3.48958 7.16667 6.60417 7.0625 9.875L9.4375 10.25L10.1562 17.5625L1.6875 18.625Z" fill="white" fill-opacity="0.3"/>
+									</svg>
+								</div>
+								<div class="title">完善个人信息</div>
+							</div>
+							<div class="userInformation">
+								<div class="avator" id="toggle-file">
+									<img src="images/TOPM.png" calss="avatarImg" id="img-view"/>
+									<div class="cameraIcon">
+										<span class="iconfont icon-camera-line"></span>
+									</div>
+								</div>
+								<div class="elementItem">
+									<div class="elementName">
+										<label for="name" class="labelName">Usuario</label>
+									</div>
+									<div class="elementInput">
+										<input name="nick_name" class="eleInput" value="1020334854@qq.com" disabled/>
+									</div>
+								</div>
+								<div class="elementItem">
+									<div class="elementName">
+										<label for="nick_name" class="labelName">apodo</label>
+									</div>
+									<div class="elementInput">
+										<input name="nick_name" class="eleInput"/>
+									</div>
+								</div>
+								<div class="elementItem">
+									<div class="elementName">
+										<label for="birthday" class="labelName">Cumpleaños</label>
+									</div>
+									<div class="elementInput" id="datePicker">
+										<input name="birthday" class="eleInput"/>
+										<span class="iconfont icon-arrow-drop-down-fill"></span>
+									</div>
+								</div>
+								<div class="elementItem">
+									<div class="elementName">
+										<label for="sex" class="labelName">Sexo</label>
+									</div>
+									<div class="elementInput" id="sexPicker">
+										<input name="sexTxt" class="eleInput"/>
+										<input name="sexVal" type="hidden" />
+										<span class="iconfont icon-arrow-drop-down-fill"></span>
+									</div>
+								</div>
+								<div class="elementItem">
+									<div class="elementName">
+										<label for="electron" class="labelName">correo electrónico</label>
+									</div>
+									<div class="elementInput">
+										<input name="electron" class="eleInput" value="1020334854@qq.com" disabled/>
+										<!-- <span class="navigateToEmail">Verificar</span> -->
+										<div>
+									<!-- 		<span class="iconfont icon-check-fill" style="color: green;"></span> -->
+										</div>
+									</div>
+								</div>
+								<!-- <div class="elementItem">
+									<div class="elementName">
+										<label for="celular" class="labelName">celular</label>
+									</div>
+									<div class="elementInput">
+										<input name="celular" class="eleInput"/>
+									</div>
+								</div> -->
+								<div class="comfirmDiv">
+									<div id="comfirmBtn">确认</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="editPassword" style="display: none;">
+							<div class="editTitle">
+								<div class="iconImg">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19" fill="none">
+									<path id="â" d="M15.25 18.625C14.6458 16.9167 14.3438 15.1042 14.3438 13.1875C14.3438 8.83333 15.6042 4.91667 18.125 1.4375L23.375 0.53125C21.6458 3.48958 20.7292 6.60417 20.625 9.875L23 10.25L23.7188 17.5625L15.25 18.625ZM1.6875 18.625C1.08333 16.9167 0.78125 15.1042 0.78125 13.1875C0.78125 8.83333 2.04167 4.91667 4.5625 1.4375L9.8125 0.53125C8.08333 3.48958 7.16667 6.60417 7.0625 9.875L9.4375 10.25L10.1562 17.5625L1.6875 18.625Z" fill="white" fill-opacity="0.3"/>
+									</svg>
+								</div>
+								<div class="title">修改密码</div>
+							</div>
+							<div class="userInformation">
+								<div class="elementItem" style="margin-top: 0;">
+									<div class="elementName">
+										<label for="firstpassword" class="labelName">当前密码</label>
+									</div>
+									<div class="elementInput">
+										<input name="firstpassword" class="eleInput" value=""/>
+									</div>
+								</div>
+								<div class="elementItem">
+									<div class="elementName">
+										<label for="secondpassword" class="labelName">新密码</label>
+									</div>
+									<div class="elementInput">
+										<input name="secondpassword" class="eleInput" value="" />
+									</div>
+								</div>
+								<div class="elementItem">
+									<div class="elementName">
+										<label for="secondpassword1" class="labelName">重复新密码</label>
+									</div>
+									<div class="elementInput">
+										<input name="secondpassword1" class="eleInput" value="" />
+									</div>
+								</div>
+								<div class="comfirmDiv">
+									<div id="comfirmBtn">确认</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+		<div class="am-popup" id="my-popup">
+			<div class="am-popup-inner">
+				<div class="am-popup-hd">
+					<h4 class="am-popup-title">裁剪图片</h4>
+					<span data-am-modal-close class="am-close">&times;</span>
+				</div>
+				<div class="am-popup-bd">
+					<!-- 裁剪显示区 -->
+					<div class="am-margin-bottom-sm" id="clip"></div>
+		
+					<button type="button" class="am-btn am-btn-primary" id="clipBtn">
+						裁剪
+					</button>
+		
+					<input class="am-hide" type="file" id="file">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/photoClip-master/dist/amazeui.min.js"></script>
+<script src="js/photoClip-master/dist/iscroll-zoom.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/photoClip-master/dist/hammer.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/photoClip-master/dist/photoClip.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mui.picker.min.js"></script>
+<script>
+	mui.init({
+		
+	});
+	mui('.mui-scroll-wrapper').scroll(); 
+	mui.plusReady(function(){
+	 
+	});
+	mui.ready(function(){
+	 
+	 });
+	 
+	//时间选择 
+	 $("#datePicker").on("tap",function(){
+		 var _self = this;
+		_self.picker = new mui.DtPicker({
+			type:"date",
+			beginDate: new Date(1900, 1, 1),//设置开始日期
+		 });
+		 _self.picker.show(function (selectItems) { 
+			console.log(selectItems);//{text: "2016",value: 2016} 
+			$("input[name='birthday']").val(selectItems.text);			
+		})
+	 })
+	 //性别选择
+	 $("#sexPicker").on("tap",function(){
+		 var _self = this;
+		 _self.picker = new mui.PopPicker(); 
+		 _self.picker.setData([{value:'1',text:'Masculino'},{value:'2',text:'Femenino'},{value:'0',text:'Secreto'}]);
+		 _self.picker.show((item)=>{
+			 console.log(item);
+			 var txt = item[0].text;
+			 var val = item[0].value;
+			 $("input[name='sexTxt']").val(txt);
+			 $("input[name='sexVal']").val(val); 
+		 });
+	 })
+	 
+	 //切换页面
+	 $(".pageTabItem").on("tap",function(){
+		 var that = this;
+		 var index = $(this).data("index");
+		 $(that).addClass("cur").siblings(".pageTabItem").removeClass("cur");
+		 if(index==1){
+			$(".editUserInfor").show();
+			$(".editPassword").hide();
+		 }else{
+			$(".editUserInfor").hide();
+			$(".editPassword").show(); 
+		 }
+	 })
+</script>
+<script>
+$(function() {
+	var $clip = $("#clip");
+	var $file = $("#file");
+	var $imgView = $("#img-view");
+	var $popup = $("#my-popup");
+	$("#toggle-file").on('tap',function() {
+		$file.click();
+		$popup.modal({
+			closeViaDimmer: false
+		});
+	});
+
+	$clip.photoClip({
+		width: 250,
+		height: 250,
+		fileMinSize: 20,
+		file: $file,
+		ok: "#clipBtn",
+		loadStart: function() {
+			mui.toast("照片读取中");
+		},
+		loadProgress: function(progress) {
+			//mui.toast(progress);
+		},
+		loadError: function() {
+			mui.toast("图片加载失败");
+		},
+		loadComplete: function() {
+			//mui.toast("照片读取完成");
+		},
+		imgSizeMin: function(kbs) {
+			//mui.toast(kbs, "上传图片过小");
+			mui.toast("上传图片过小");
+		},
+		clipFinish: function(dataURL) {
+			document.getElementById("img-view").src = dataURL;
+			$popup.modal("close");
+		}
+	});
+})
+</script>
