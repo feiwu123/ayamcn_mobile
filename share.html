@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>share</title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		
+		
+		<link rel="stylesheet" href="css/ayamcn/share.css" />
+		<link rel="stylesheet" href="fonts/font/iconfont.css"/>
+	</head>
+	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+			<!--主界面部分-->
+			<div class="topCon" style="position: relative;">
+				<div class="topConDiv">
+					<div class="left_con">
+						<span class="iconfont icon-arrow-left-s-line backUrl"></span>
+					</div>
+					<div class="center_con">
+					</div>
+					<div class="right_con">	
+					</div>
+				</div>
+			</div>
+			<div class="mui-inner-wrap" style="height: calc(100% - 54px);">
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper" style="background-color: transparent;">
+					<div class="mui-scroll">
+					<!-- 内容 -->
+					<div class="scrollContent">
+						<div class="share_page">
+							<div class="share_top_page">
+								<div>
+									<img src="./images/share_bg.png" />
+								</div>
+								<div class="share_detail">
+									<div class="share_detail_title">
+										<div class="left_rect">
+											<img src="./images/left_rect.png"/>
+										</div>
+										<div class="content_detail" style="position: absolute; width: 100%;">
+											<div class="middle_title">
+												Enlace de invitación
+											</div>
+											<div class="share_detail_content">
+												<div class="share_inner_con">
+													<div class="share_links">
+														https://ayamcn.com/?u=13
+													</div>
+													<div class="copy_btn">
+														Copiar enlace
+													</div>
+													<div class="copy_tips">
+														Enlace de invitación para tus referidos, comparte el enlace con tu amigo para que puedas obtener beneficios
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="right_rect">
+											<img src="images/right_rect.png"/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="share_liucheng">
+								<div class="share_guocheng">
+									<div class="title">
+										Mis referidos
+									</div>
+									<div class="stepList">
+										<div class="step12">
+											<div class="stepItem cur">
+												<div class="stepLine">
+													<div class="stepLineLeft"></div>
+													<div class="stepCircle"></div>
+													<div class="stepLineRight"></div>
+												</div>
+												<div class="stepNumber">
+													<img src="./images/numbers/1.png"/>
+												</div>
+												<div class="stepTxt">Compartir código/enlace</div>
+											</div>
+											<div class="stepItem">
+												<div class="stepLine">
+													<div class="stepLineLeft"></div>
+													<div class="stepCircle"></div>
+													<div class="stepLineRight"></div>
+												</div>
+												<div class="stepNumber">
+													<img src="./images/numbers/2.png"/>
+												</div>
+												<div class="stepTxt">Iniciar sesión</div>
+											</div>
+										</div>
+										<div class="step34">
+											<div class="stepItem">
+												<div class="stepLine">
+													<div class="stepLineLeft"></div>
+													<div class="stepCircle"></div>
+													<div class="stepLineRight"></div>
+												</div>
+												<div class="stepNumber">
+													<img src="./images/numbers/4.png"/>
+												</div>
+												<div class="stepTxt">recibir comisión</div>
+											</div>
+											<div class="stepItem">
+												<div class="stepLine">
+													<div class="stepLineLeft"></div>
+													<div class="stepCircle"></div>
+													<div class="stepLineRight"></div>
+												</div>
+												<div class="stepNumber">
+													<img src="./images/numbers/3.png"/>
+												</div>
+												<div class="stepTxt">Registro/Compra</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="share_ticheng" style="padding-bottom: 30px;">
+									<div class="share_ticheng_table">
+										<div class="title">
+											Miembro afiliado
+										</div>
+										<div class="tichengTable">
+											<div class="tableRow tableHead">
+												<div class="th">Nivel</div>
+												<div class="th">Número</div>
+												<div class="th">Nivel de dinero</div>
+											</div>
+											<div class="tableBody">
+												<div class="tableRow">
+													<div class="td">1</div>
+													<div class="td">2</div>
+													<div class="td">5%</div>
+												</div>
+												<div class="tableRow">
+													<div class="td">2</div>
+													<div class="td">0</div>
+													<div class="td">1%</div>
+												</div>
+												<div class="tableRow">
+													<div class="td">3</div>
+													<div class="td">0</div>
+													<div class="td">0</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</body>
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/common/common.js"></script>
+<script>
+	mui.init({
+		
+	});
+	mui('.mui-scroll-wrapper').scroll(); 
+	mui.plusReady(function(){
+	 
+	});
+	mui.ready(function(){
+	 
+	 });
+	 
+	$(".copy_btn").on("tap",(e)=>{
+		var copyLink = $(".share_links").html().trim();
+		copyTextToClipboard(copyLink);
+	}) 
+	 
+</script>

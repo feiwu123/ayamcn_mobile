@@ -206,7 +206,7 @@
 									<div class="title">文字属性</div>
 									<div class="attrCon">
 										<ul>
-											<li class="active">属性一</li>
+											<li>属性一</li>
 											<li>属性一</li>
 											<li>属性一</li>
 											<li>属性一</li>
@@ -223,7 +223,7 @@
 									<div class="title">图文属性</div>
 									<div class="attrCon">
 										<ul>
-											<li class="active">
+											<li>
 												<div class="attrImg">
 													<img class="attrImgSmall" src="https://img.ltwebstatic.com/images3_spmp/2024/12/03/a2/17331756032a8477a2bc2d28600fe36c3d1752c8c8_square.jpg"/>
 												</div>
@@ -325,9 +325,7 @@
 	   })
 	   this.className = "active";
 	   var chooseAttr = "已选中:";
-	   var activeAttrName = $(this).find('.attrName span').html();
-	   chooseAttr = chooseAttr + activeAttrName;
-	   $(".chooseAttrs").html('123');
+	   chooseAttrsTxt();  	
    })
    mui(".bottomCon").on("tap",".openPop",function(e){
 	   document.getElementsByTagName('html')[0].className = "overflow";
