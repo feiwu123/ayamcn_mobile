@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人中心</title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/ayamcn/user.css" />
+		<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4767711_kqiejcqo6dq.css"/>
+	</head>
+	<body>
+			<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+				<!--主界面部分-->
+				<div class="mui-inner-wrap">
+					<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+					<div class="body-content">
+						<div class="row" id="userInfor">
+							<div class="userInformation">
+								<div class="avator">
+									<img src="" />
+								</div>
+								<div class="userName">
+									<div class="name">jjjjj</div>
+									<div class="editUserName mobileJump" data-href="https://ayamcn.com/user.php?act=profile">
+										修改个人资料&nbsp;>
+									</div>
+								</div>
+							</div>
+							<div class="myBalance">
+								<div class="badge">
+									<img src="./images/user/badge.svg" />
+									<span class="balance">Mi Balance</span>
+								</div>
+								<div class="ver mobileJump" data-href="https://ayamcn.com/user.php?act=account_log">
+									VER
+								</div>
+							</div>	
+						</div>
+						
+						<div class="row" style="margin-top: 24px;" >
+							<div class="menuList">
+								<div class="listItem mobileJump" data-href="https://ayamcn.com/user.php?act=order_list">
+									<div class="menuIcon">
+										<img src="./images/user/menu.svg" />
+									</div>
+									<div class="menuTxt">
+										Mis pedidos
+									</div>
+								</div>
+								<div class="listItem mobileJump" data-href="https://ayamcn.com/detail_account_bind.php?act=list">
+									<div class="menuIcon">
+										<img src="./images/user/shops.svg" />
+									</div>
+									<div class="menuTxt">
+										Account List
+									</div>
+								</div>
+								<div class="listItem mobileJump" data-href="https://ayamcn.com/user.php?act=affiliate">
+									<div class="menuIcon">
+										<img src="./images/user/account.svg" />
+									</div>
+									<div class="menuTxt">
+										Mis recomendados
+									</div>
+								</div>
+							</div>
+						</div>	
+					
+						<!-- 下拉我的喜欢 -->
+						<div class="row" id="productListContent" style="margin-top: 24px;">
+							<div class="title" style="font-weight: 500;font-size: 16px;color: #000000;">
+								Mis favoritos
+							</div>
+							<div class="productList">
+								<div class="productItem">
+									<div class="productImg">
+										<img src="https://img.ltwebstatic.com/images3_spmp/2024/12/03/a2/17331756032a8477a2bc2d28600fe36c3d1752c8c8_square.jpg"/>
+									</div>
+									<div class="productName">
+										Redmi Note 12 4GB RAM 128GB ROM Onyx Gray
+									</div>
+									<div class="productPrice">
+										$2899.00MXN
+									</div>
+								</div>
+								<div class="productItem">
+									<div class="productImg">
+										<img src="https://img.ltwebstatic.com/images3_spmp/2024/12/03/a2/17331756032a8477a2bc2d28600fe36c3d1752c8c8_square.jpg"/>
+									</div>
+									<div class="productName">
+										Redmi Note 12 4GB RAM 128GB ROM Onyx Gray
+									</div>
+									<div class="productPrice">
+										$2899.00MXN
+									</div>
+								</div>
+								<div class="productItem">
+									<div class="productImg">
+										<img src="https://img.ltwebstatic.com/images3_spmp/2024/12/03/a2/17331756032a8477a2bc2d28600fe36c3d1752c8c8_square.jpg"/>
+									</div>
+									<div class="productName">
+										Redmi Note 12 4GB RAM 128GB ROM Onyx Gray
+									</div>
+									<div class="productPrice">
+										$2899.00MXN
+									</div>
+								</div>
+								<div class="productItem">
+									<div class="productImg">
+										<img src="https://img.ltwebstatic.com/images3_spmp/2024/12/03/a2/17331756032a8477a2bc2d28600fe36c3d1752c8c8_square.jpg"/>
+									</div>
+									<div class="productName">
+										Redmi Note 12 4GB RAM 128GB ROM Onyx Gray
+									</div>
+									<div class="productPrice">
+										$2899.00MXN
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						</div>
+						</div>
+						
+					</div>
+					<!-- off-canvas backdrop -->
+					<div class="mui-off-canvas-backdrop"></div>
+				</div>
+			
+				<!-- 底部tabs -->
+				<div class="bottom_tabs">
+					<div class="tabs cur">
+						<div class="iconfont icon-home-6-line"></div>
+						<div class="txt">home</div>
+					</div>
+					<div class="tabs">
+						<div class="iconfont icon-file-list-2-line"></div>
+						<div class="txt">Shein Envío</div>
+					</div>
+					<div class="tabs">
+						<div class="iconfont icon-shopping-cart-2-line"></div>
+						<div class="txt">Carrito</div>
+					</div>
+					<div class="tabs">
+						<div class="iconfont icon-user-4-line"></div>
+						<div class="txt">profile</div>
+					</div>
+				</div>	
+			</div>
+	</body>
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/common/common.js"></script>
+<script type="text/javascript" charset="UTF-8">
+   mui.init({
+	   pullRefresh : {
+	       container:'#offCanvasContentScroll',//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+	       up : {
+	         height:50,//可选.默认50.触发上拉加载拖动距离
+	         auto:false,//可选,默认false.自动上拉加载一次
+	         contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+	         contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+	         callback:getAjax //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+	       }
+	     }
+   });
+   mui.plusReady(function(){
+    
+   });
+   mui.ready(function(){
+    
+    });
+   
+   function getAjax(){
+	   this.endPullupToRefresh(true);
+	   mui.ajax('http://server-name/login.php',{
+	   	data:{
+	   		username:'username',
+	   		password:'password'
+	   	},
+	   	dataType:'json',//服务器返回json格式数据
+	   	type:'post',//HTTP请求类型
+	   	timeout:10000,//超时时间设置为10秒；
+	   	headers:{'Content-Type':'application/json'},	              
+	   	success:function(data){
+	   		//服务器返回响应，根据响应结果，分析是否登录成功；
+			//this.endPullupToRefresh(true|false);必须要结束数据
+	   	},
+	   	error:function(xhr,type,errorThrown){
+	   		//异常处理；
+	   		console.log(type);
+	   	}
+	   });
+   }
+   
+
+
+   
+  </script>
+  

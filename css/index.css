@@ -641,6 +641,6 @@ input[type='checkbox'] {
 }
 .languageList .listItem:last-child{
 	border-bottom: 0px;
-		margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
